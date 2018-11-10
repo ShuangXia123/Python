@@ -125,7 +125,7 @@ def buy(item):
 def display_menu(menu):
     order_list=[]
     list=[]
-    exit=len(menu)
+    quit=len(menu)
     process=True
     sequence=1
     if  isinstance (menu,tuple):  
@@ -145,11 +145,11 @@ def display_menu(menu):
                     order_list.append(list[numb_option-1])
                 elif numb_option==len_list:
                     process=False
-                    return len_list,exit
+                    return len_list,quit
                 else:
                     print('Not valid number')
     else:
-        return -1,exit
+        return -1,quit
 
 # ------ Place code above here /\ /\ /\ ------
 
