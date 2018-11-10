@@ -123,11 +123,11 @@ def exercise07(n):
 def buy(item):
     print(str(item) + "Success")
 def display_menu(menu):
-    order_list= []
+    order_list=[]
     list=[]
-    exit = len(menu)
-    process =True
-    sequence = 1
+    exit=len(menu)
+    process=True
+    sequence=1
     if  isinstance (menu,tuple):  
         for item in menu:
             list.append(str(sequence)+'_'+item)
@@ -140,10 +140,10 @@ def display_menu(menu):
             for item in list:
                 print(item)
                 numb_option = int(input('Select an option by entering a number'))
-                if numb_option < len_list:
+                if numb_option<len_list:
                     buy(list[numb_option-1])
                     order_list.append(list[numb_option-1])
-                elif numb_option == len_list:
+                elif numb_option==len_list:
                     process=False
                     return len_list,exit
                 else:
